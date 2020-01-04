@@ -6,8 +6,28 @@ namespace ConsoleApp1
 {
     class BlueTeam : Human
     {
-        public override int Health() => 90;
-        public override bool IsAlive() => base.IsAlive();
-        public override int Damage() => 5;
+        private int _health ;
+        private int _damage ;
+        private bool _isAlive;
+
+        public BlueTeam(int _health, int _damage, bool _isAlive)
+        {
+            this._health = _health;
+            this._damage = _damage;
+            this._isAlive = _isAlive;
+        }
+
+        public  override int Health
+        {
+            get { return _health; }
+            set { _health = value; }
+        }
+        public override bool IsAlive { get { return _isAlive; } set { IsAlive = value; } }
+        public override int Damage { get { return _damage; } set { _damage = value; } }
+
+        public void GetDamage(int damage)
+        {
+            _health -= damage;
+        }
     }
 }

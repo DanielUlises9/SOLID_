@@ -5,11 +5,11 @@ using System.Text;
 
 namespace ConsoleApp1
 {
-    public class Human : ILivingThing , IAtack
+    public abstract class Human : ILivingThing , IAtack
     {
-        public virtual int Health()=>100;
-        public virtual bool IsAlive() => true;
-        public virtual int Damage() => 5;
+        public abstract int Health { get; set; }
+        public abstract bool IsAlive { get; set; }
+        public abstract int Damage { get; set; }
 
     }
 }

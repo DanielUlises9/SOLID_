@@ -14,7 +14,7 @@ namespace ConsoleApp1
             this.bt = bt;
             this.rt = rt;
             rn = new Random(DateTime.Now.Second);
-            Console.WriteLine(this.rt.Health());
+            
         }
         
 

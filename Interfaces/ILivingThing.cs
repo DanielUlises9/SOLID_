@@ -6,7 +6,7 @@ namespace ConsoleApp1
 {
     interface ILivingThing
     {
-        int Health { get; set; }
-        bool IsAlive { get; set; }
+        int Health { get; }
+        bool IsAlive { get; }
     }
 }

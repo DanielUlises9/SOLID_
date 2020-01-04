@@ -7,9 +7,9 @@ namespace ConsoleApp1
 {
     public abstract class Human : ILivingThing , IAtack
     {
-        public abstract int Health { get; set; }
-        public abstract bool IsAlive { get; set; }
-        public abstract int Damage { get; set; }
+        public abstract int Health { get;  }
+        public abstract int Damage { get; }
+        public abstract bool IsAlive { get; }
 
     }
 }

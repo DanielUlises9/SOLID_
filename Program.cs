@@ -10,10 +10,7 @@ namespace ConsoleApp1
             RedTeam rt = new RedTeam(90,7,true);
 
             FieldOfCombat foc = new FieldOfCombat(rt,bt);
-
-            Console.WriteLine(bt.Health);
-            Console.WriteLine(rt.Health);
-
+            foc.Fight();
         }
     }
 }

@@ -6,6 +6,6 @@ namespace ConsoleApp1.Interfaces
 {
     interface IAtack
     {
-        int Damage { get; set; }
+        int Damage { get; }
     }
 }

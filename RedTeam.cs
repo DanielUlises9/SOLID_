@@ -34,5 +34,10 @@ namespace ConsoleApp1
         {
             _isAlive = false;
         }
+
+        public override string ToString()
+        {
+            return $"Health: {_health} Damage: {_damage} is Alive: {IsAlive}";
+        }
     }
 }

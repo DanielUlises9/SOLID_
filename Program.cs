@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace ConsoleApp1
 {
@@ -6,11 +7,10 @@ namespace ConsoleApp1
     {
         static void Main(string[] args)
         {
-            BlueTeam bt = new BlueTeam(100,5,true);
-            RedTeam rt = new RedTeam(90,7,true);
+            Human bt = new BlueTeam(1, 1, true);
+            LotsOfHumans loh = new LotsOfHumans();
 
-            FieldOfCombat foc = new FieldOfCombat(rt,bt);
-            foc.Fight();
+            loh.GenerateHumans(1,bt);
         }
     }
 }

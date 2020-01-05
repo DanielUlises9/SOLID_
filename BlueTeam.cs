@@ -6,10 +6,14 @@ namespace ConsoleApp1
 {
     class BlueTeam : Human
     {
-        private int _health ;
-        private int _damage ;
+        private int _health;
+        private int _damage;
         private bool _isAlive;
 
+        public BlueTeam()
+        {
+
+        }
         public BlueTeam(int _health, int _damage, bool _isAlive)
         {
             this._health = _health;
@@ -17,11 +21,11 @@ namespace ConsoleApp1
             this._isAlive = _isAlive;
         }
 
-        public  override int Health
+        public override int Health
         {
             get { return _health; }
         }
-        public override bool IsAlive { get { return _isAlive; }  }
+        public override bool IsAlive { get { return _isAlive; } }
         public override int Damage { get { return _damage; } }
 
         public void GetDamage(int damage)
@@ -33,6 +37,11 @@ namespace ConsoleApp1
         private void isDead()
         {
             _isAlive = false;
+        }
+
+        public override string ToString()
+        {
+            return $"Health: {_health} Damage: {_damage} is Alive: {IsAlive}";
         }
     }
 }
